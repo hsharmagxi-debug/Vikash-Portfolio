@@ -38,6 +38,14 @@ export default function Engineering() {
     <section className="min-h-screen bg-black text-white px-6 py-20">
       <div className="max-w-6xl mx-auto">
 
+        {/* BACK */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-zinc-500 hover:text-white text-sm mb-10 transition-colors"
+        >
+          ← Back to Home
+        </Link>
+
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -37,6 +38,13 @@ This engineering case study does not exist yet.`;
       <div className="max-w-4xl mx-auto">
 
         <div className="mb-10">
+          <Link
+            href="/engineering"
+            className="inline-flex items-center gap-2 text-zinc-500 hover:text-white text-sm mb-6 transition-colors"
+          >
+            ← Back to Engineering
+          </Link>
+
           <h1 className="text-4xl font-bold text-cyan-400">
             Engineering Case Study
           </h1>
