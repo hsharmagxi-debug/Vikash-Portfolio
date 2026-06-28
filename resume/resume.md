@@ -17,7 +17,7 @@ Results-driven Technical Specialist and Founder with deep expertise in live broa
 ### Technical Specialist – Broadcasting & Streaming (NHL Project)
 **GlobalXperts | 2025 – Present**
 
-- Manage 16 simultaneous live feeds for NHL broadcasts with 99.97% uptime and zero escalations during high-stakes games including Stanley Cup Finals.
+- Delivered reliable live production support for NHL broadcasts across 16 simultaneous feeds with 99.97% uptime, including high-stakes events such as Stanley Cup Finals Game 7.
 - Handle real-time monitoring, incident management in ServiceNow, and rapid troubleshooting for live streaming infrastructure.
 - Work with AWS MediaLive, MediaPackage, SRT/RTMP low-latency protocols, and VTOC systems.
 - Maintain 100% compliance on pre/post-game checklists and detailed activity logging.
@@ -41,13 +41,17 @@ Chat with GPT-4o, Claude, Gemini via OpenRouter with document RAG, code assistan
 **Lumina Numerology App** — Free, offline, high-accuracy numerology PWA  
 Implements Pythagorean & Chaldean systems with a 5-expert consensus engine. Fully local with no data collection.
 
+**Engineering Case Studies** — Written breakdowns (CI/CD, Terraform state, DevSecOps, Observability) published on the portfolio's `/engineering` section, with an embedded AI assistant for Q&A.
+
 ---
 
 ## Skills
 
 **Broadcast & Streaming:** AWS MediaLive, MediaPackage, SRT, RTMP, Live Monitoring, VTOC, ServiceNow
 
-**Cloud & Infrastructure:** AWS, Docker, Vercel, Supabase, GitHub Actions, CI/CD
+**AV Systems & Enterprise Networking (5+ yrs):** Q-SYS, Crestron, AMX, HDBaseT, VLANs (802.1Q trunking), L2/L3 switching, RSTP/MSTP, BPDU Guard, DHCP Snooping, switch port security, SOW/commissioning, red-line drawings
+
+**Cloud & Infrastructure:** AWS, Docker, Vercel, Supabase (with RLS), Zod, GitHub Actions, CI/CD
 
 **AI & Agentic Systems:** Claude, Ollama, LangGraph-style agents, n8n, RAG, Multi-agent orchestration, AetherAI architecture
 
