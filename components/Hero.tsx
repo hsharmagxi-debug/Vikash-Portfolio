@@ -7,6 +7,7 @@ export default function Hero() {
     "Broadcast & Cloud Operations Specialist",
     "Lead Technical Specialist – NHL Broadcasts",
     "Avid Technical Support Engineer",
+    "Builder of Autonomous AI Systems",
     "Founder & CEO, The KPI Hub",
   ];
 
@@ -28,8 +29,8 @@ export default function Hero() {
 
         <div className="h-20 mb-8 overflow-hidden">
           <motion.div
-            animate={{ y: [0, -80, -160, -240, 0] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            animate={{ y: [0, -80, -160, -240, -320, 0] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
             className="text-3xl md:text-4xl text-[#06b6d4] font-medium"
           >
             {titles.map((title, index) => (
@@ -43,7 +44,7 @@ export default function Hero() {
         <p className="max-w-2xl text-xl text-white/70 mb-10">
           11+ years in live broadcast infrastructure and cloud operations. Delivered 99.9% uptime
           across 1,500+ NHL events with zero SLA escalations. Avid-compatible workflows, AWS Media Services,
-          and enterprise networking — plus founding The KPI Hub, a B2B SaaS intelligence platform.
+          VSAT engineering — and building autonomous AI systems and The KPI Hub as a SaaS founder.
         </p>
 
         <div className="flex flex-wrap gap-4">

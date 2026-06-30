@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+// Primary experience — recent + directly relevant roles
 const EXPERIENCE = [
   {
     period: "Apr 2025 – Present",
@@ -11,11 +12,25 @@ const EXPERIENCE = [
     location: "Noida, India",
     type: "Full-time",
     bullets: [
-      "Promoted to Lead Technical Specialist following sustained 99.9% SLA performance; led technical escalation handling, junior engineer mentoring, and shift handoff documentation standardisation across the global NHL broadcast support team.",
-      "Assumed end-to-end case ownership for all Tier 3/4 incidents — from initial triage through bug reproduction, RCA documentation, and corrective action closure.",
+      "Promoted to Lead following sustained 99.9% SLA performance; led technical escalation handling, junior engineer mentoring, and shift handoff documentation standardisation across the global NHL broadcast support team.",
+      "End-to-end case ownership for all Tier 3/4 incidents — from initial triage through bug reproduction, RCA documentation, and corrective action closure.",
       "Designed and presented AetherAI (on-premise enterprise AI automation suite) to GlobalXperts C-suite — 11-slide deck, 9 departments, 90-day roadmap. C-suite approved.",
     ],
     tags: ["Tier 3/4", "RCA", "ServiceNow", "Leadership", "AetherAI", "SLA Governance"],
+  },
+  {
+    period: "2025 – Present",
+    role: "Founder & CEO",
+    company: "The KPI Hub",
+    client: "thekpihub.com",
+    location: "New Delhi, India",
+    type: "Founder",
+    bullets: [
+      "Building a high-trust B2B SaaS intelligence platform delivering real-time category intelligence via AI-synthesized daily briefs — 95%-automated 5-engine AI content pipeline (Python, LLM APIs, WordPress REST, SerpAPI).",
+      "Stack: Next.js 15, TypeScript, Tailwind, Supabase (with RLS), Claude 3.5 Sonnet, Vercel.",
+      "Selected as India's Top 300 Builders at VibeCon 2025 (YC × Anthropic × Lightspeed × Razorpay).",
+    ],
+    tags: ["Next.js 15", "TypeScript", "Supabase", "Claude", "SaaS", "AI Pipelines"],
   },
   {
     period: "Jun 2023 – Mar 2025",
@@ -25,12 +40,11 @@ const EXPERIENCE = [
     location: "Noida, India",
     type: "Full-time",
     bullets: [
-      "Tier 3/4 technical support for global live streaming across AWS MediaLive and MediaConnect — managing end-to-end IP video ingest, transcode, and playout pipelines for 1,500+ live NHL broadcast events.",
-      "Maintained 99.9% uptime against contracted 99.5% SLA — zero Presidio SLA escalations, 100% ServiceNow case management compliance, 100% shift handoff documentation compliance.",
-      "Configured, troubleshot, and validated encoder/decoder parameters (Sencore, Telstra, Adtec) for frame-accurate signal delivery — directly transferable to Avid codec pipeline troubleshooting: DNxHD, DNxHR, H.264/H.265, AVC-Intra, MXF/MOV.",
-      "Designed VLAN-segmented, IGMP Snooping, QoS-enforced Layer 2/3 network topologies for multi-tenant broadcast delivery — applicable to Avid NEXIS fabric networking and engine zone bandwidth configuration.",
-      "Reduced incident response time by 35% through predictive alerting frameworks and structured escalation workflows; managed VTOC for post-event archiving; administered CVM setup on AWS.",
-      "Commissioned DSP audio systems (Biamp Tesira, QSC Q-SYS, Shure IntelliMix, BSS Audio, ClearOne) with Dante AoIP distribution.",
+      "Tier 3/4 technical support for global live streaming across AWS MediaLive and MediaConnect — end-to-end IP video ingest, transcode, and playout pipelines for 1,500+ live NHL broadcast events.",
+      "Maintained 99.9% uptime against contracted 99.5% SLA — zero Presidio SLA escalations, 100% ServiceNow compliance, 100% shift handoff documentation compliance.",
+      "Configured and validated encoder/decoder parameters (Sencore, Telstra, Adtec) for frame-accurate signal delivery — codec expertise transferable to Avid: DNxHD, DNxHR, H.264/H.265, AVC-Intra, MXF/MOV.",
+      "Designed VLAN-segmented, IGMP Snooping, QoS-enforced Layer 2/3 network topologies — applicable to Avid NEXIS fabric networking and engine zone bandwidth configuration.",
+      "Reduced incident response time by 35% via predictive alerting frameworks; managed VTOC for post-event archiving; commissioned DSP audio systems (Biamp Tesira, QSC Q-SYS, Shure IntelliMix) with Dante AoIP.",
     ],
     tags: ["AWS MediaLive", "MediaConnect", "Zixi/SRT/RTMP", "VTOC", "ServiceNow", "DNxHD/DNxHR", "VLAN", "Dante AoIP"],
   },
@@ -43,8 +57,8 @@ const EXPERIENCE = [
     type: "Full-time",
     bullets: [
       "Managed broadcast streaming infrastructure for a nationwide government e-learning project over VSAT — designed link budgets, EIRP calculations, bandwidth allocation, and RF parameters for satellite video delivery across hundreds of remote classrooms.",
-      "Led technical team delivery for HCIL: field operations oversight, SLA governance, client escalation management, and corrective action implementation for critical broadcast incidents.",
-      "Coordinated multi-site VSAT installations, remote migrations, satellite upgrades; supported NOC teams during incidents and change windows.",
+      "Led technical team delivery: field operations oversight, SLA governance, client escalation management, and corrective action implementation for critical broadcast incidents.",
+      "Coordinated multi-site VSAT installations, remote migrations, and satellite upgrades; supported NOC teams during incidents and change windows.",
       "Authored SOPs, configuration procedures, and operational workflow documentation; drove process improvements that enhanced incident resolution speed and SLA adherence.",
     ],
     tags: ["VSAT", "EIRP", "Link Budget", "SLA Governance", "NOC Support", "SOPs"],
@@ -58,34 +72,27 @@ const EXPERIENCE = [
     bullets: [
       "Executed high-throughput satellite (HTS) migration for enterprise and government VSAT fleets: RF configuration, remote site validation, post-migration quality testing; designed link budgets, EIRP calculations, and satellite delivery architecture.",
       "Conducted fiber route planning, OTDR testing, and splicing for broadcast connectivity; provided escalation support for hub upgrades and broadcast workflow migrations.",
-      "Validated network and media performance post major infrastructure changes; coordinated multi-team RF validation and post-migration quality verification.",
     ],
     tags: ["VSAT/HTS", "RF Configuration", "EIRP", "Fiber/OTDR", "Network Architecture"],
   },
+];
+
+// Earlier career — shown separately in a compact block
+const EARLIER_CAREER = [
   {
     period: "Jun 2016 – Aug 2018",
     role: "Senior Testing Engineer",
     company: "Krishna Associates",
-    location: "India",
     type: "Part-time",
-    bullets: [
-      "Spearheaded route planning, field assessment, and quality validation ensuring all deliverables met technical specifications and client acceptance criteria.",
-      "Performed Root Cause Analysis (RCA) for testing failures; documented findings with structured evidence and implemented corrective action plans.",
-    ],
-    tags: ["RCA", "Quality Validation", "Field Assessment"],
+    note: "Route planning, field assessment, quality validation, and RCA documentation for all testing deliverables.",
   },
   {
     period: "Jan 2013 – May 2016",
     role: "Technical Support & IT Operations | Process Developer",
     company: "Genpact India / System Networks",
-    client: "Account: Samsung — Audio, Video (AV) & IT Operations",
-    location: "Delhi",
+    client: "Account: Samsung — AV & IT Operations",
     type: "Full-time",
-    bullets: [
-      "Delivered IT and AV device technical support for Samsung consumer electronics and enterprise AV product lines; handled end-to-end incident resolution, user training, and process documentation to reduce MTTR.",
-      "Coordinated with internal ops and client stakeholders to maintain quality control and customer satisfaction metrics.",
-    ],
-    tags: ["AV Support", "IT Operations", "Incident Resolution", "MTTR"],
+    note: "End-to-end IT and AV device technical support for Samsung consumer electronics and enterprise AV lines; incident resolution, user training, MTTR reduction.",
   },
 ];
 
@@ -142,11 +149,11 @@ export default function Timeline() {
             Experience
           </h2>
           <p className="mt-4 text-zinc-400">
-            IT Ops → Satellite/VSAT → Broadcast Cloud → Lead Technical Specialist (NHL) → SaaS Founder & AI Builder
+            Broadcast Cloud Operations → VSAT Engineering → Lead Technical Specialist (NHL) → SaaS Founder & AI Builder
           </p>
         </motion.div>
 
-        {/* Timeline */}
+        {/* Primary Timeline */}
         <div className="relative">
           <div className="absolute left-0 top-2 bottom-2 w-px bg-zinc-800" />
 
@@ -170,7 +177,7 @@ export default function Timeline() {
                   <span className="text-cyan-400 font-semibold text-sm">{job.company}</span>
                 </div>
 
-                {"client" in job && (
+                {"client" in job && job.client && (
                   <div className="text-xs text-zinc-500 mb-1">{job.client}</div>
                 )}
 
@@ -205,13 +212,47 @@ export default function Timeline() {
           </div>
         </div>
 
+        {/* Earlier Career — isolated compact block */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-16"
+        >
+          <div className="bg-zinc-900/30 border border-zinc-800/60 rounded-2xl p-6">
+            <h4 className="text-sm font-semibold text-zinc-500 uppercase tracking-widest mb-4">
+              Earlier Career
+            </h4>
+            <div className="space-y-4">
+              {EARLIER_CAREER.map((job, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-zinc-600 flex-shrink-0" />
+                  <div>
+                    <div className="flex flex-wrap items-baseline gap-1.5">
+                      <span className="text-sm text-zinc-300 font-medium">{job.role}</span>
+                      <span className="text-zinc-600 text-xs">·</span>
+                      <span className="text-zinc-500 text-xs">{job.company}</span>
+                      {"client" in job && job.client && (
+                        <span className="text-zinc-600 text-xs">· {job.client}</span>
+                      )}
+                    </div>
+                    <div className="text-xs text-zinc-600 mb-1">{job.period} · {job.type}</div>
+                    <div className="text-xs text-zinc-500 leading-relaxed">{job.note}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
         {/* Certifications */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-20"
+          className="mt-8"
         >
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6">
             <h4 className="text-sm font-semibold text-cyan-400 uppercase tracking-widest mb-4">

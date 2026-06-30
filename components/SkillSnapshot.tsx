@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { profile } from "@/lib/profile";
 
 const CATEGORY_LABELS: Record<string, string> = {
-  broadcasting: "Broadcast & IP Video",
-  cloud: "Cloud, Linux & Monitoring",
+  broadcasting: "Broadcasting & Streaming",
+  cloud: "Cloud & Infrastructure",
   ai: "AI & Agentic Systems",
   fullstack: "Full-Stack & Product",
   platform: "AV, Networking & VSAT",
