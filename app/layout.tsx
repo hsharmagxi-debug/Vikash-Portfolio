@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vikash Jaiswal — Principal DevOps & Platform Engineering Leader",
+  title: "Himanshu Sharma — Technical Specialist & AI Builder",
   description:
-    "16+ years engineering enterprise-scale cloud platforms, Kubernetes infrastructure, and AI agent operating systems across 7 global regions.",
+    "Technical Specialist supporting live NHL broadcasts with 99.97% uptime. Founder of The KPI Hub. Builder of autonomous AI systems, self-hosted infrastructure, and production-grade SaaS.",
   keywords: [
-    "DevOps Engineer",
+    "Live Broadcasting",
+    "NHL Broadcast Engineer",
+    "AWS MediaLive",
+    "AI Systems Builder",
+    "SaaS Founder",
     "Platform Engineering",
-    "AWS Architect",
-    "Kubernetes",
-    "Terraform",
-    "GenAI",
-    "AI Systems",
-    "SRE",
+    "Next.js",
+    "Self-hosted AI",
   ],
-  authors: [{ name: "Vikash Jaiswal" }],
+  authors: [{ name: "Himanshu Sharma" }],
   openGraph: {
-    title: "Vikash Jaiswal — Principal DevOps & Platform Engineering Leader",
+    title: "Himanshu Sharma — Technical Specialist & AI Builder",
     description:
-      "16+ years engineering enterprise-scale cloud platforms, Kubernetes infrastructure, and AI agent operating systems.",
+      "Technical Specialist supporting live NHL broadcasts with 99.97% uptime. Founder of The KPI Hub. Builder of autonomous AI systems and production-grade SaaS.",
     type: "website",
   },
 };

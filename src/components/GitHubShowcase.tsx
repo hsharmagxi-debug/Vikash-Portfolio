@@ -5,11 +5,8 @@ import { motion } from "framer-motion";
 import { getRepos, GitHubRepo } from "../lib/github";
 
 const FEATURED_REPOS = [
-  "Vikash-Portfolio",
-  "AI-Forge",
-  // Add more repos here later
-  // "terraform-modules",
-  // "k8s-lab",
+  "Himanshu-Portfolio",
+  "lumina-numerology",
 ];
 
 export default function GitHubShowcase() {

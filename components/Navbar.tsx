@@ -33,10 +33,10 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="text-white font-bold text-lg tracking-tight select-none">
-          <span className="text-cyan-400">V</span>
-          <span className="text-white">J</span>
+          <span className="text-cyan-400">H</span>
+          <span className="text-white">S</span>
           <span className="ml-2 text-zinc-500 font-normal text-sm hidden sm:inline">
-            / Lead Platform Engineer
+            / Technical Specialist & Founder
           </span>
         </a>
 

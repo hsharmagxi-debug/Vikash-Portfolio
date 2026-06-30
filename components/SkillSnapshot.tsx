@@ -5,21 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { profile } from "@/lib/profile";
 
 const CATEGORY_LABELS: Record<string, string> = {
-  cloud: "Cloud",
-  infra: "Infrastructure",
-  cicd: "CI / CD",
-  observability: "Observability",
-  security: "Security",
-  ai: "AI / GenAI",
+  broadcasting: "Broadcasting & Streaming",
+  cloud: "Cloud & Infrastructure",
+  ai: "AI & Agentic Systems",
+  fullstack: "Full-Stack & Product",
+  platform: "Platform Engineering",
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
-  cloud: "border-orange-700 text-orange-300 bg-orange-900/20",
-  infra: "border-cyan-700 text-cyan-300 bg-cyan-900/20",
-  cicd: "border-blue-700 text-blue-300 bg-blue-900/20",
-  observability: "border-yellow-700 text-yellow-300 bg-yellow-900/20",
-  security: "border-red-700 text-red-300 bg-red-900/20",
+  broadcasting: "border-orange-700 text-orange-300 bg-orange-900/20",
+  cloud: "border-cyan-700 text-cyan-300 bg-cyan-900/20",
   ai: "border-purple-700 text-purple-300 bg-purple-900/20",
+  fullstack: "border-blue-700 text-blue-300 bg-blue-900/20",
+  platform: "border-green-700 text-green-300 bg-green-900/20",
 };
 
 async function downloadReport() {
@@ -140,11 +138,11 @@ async function downloadReport() {
   // ── Delivery Capability ──────────────────────────────
   sectionLabel("Delivery Capability");
   const capabilities: [string, string][] = [
-    ["CI/CD & Pipelines", knowledgeAreas.cicd],
-    ["Infrastructure as Code", knowledgeAreas.terraform],
-    ["DevSecOps", knowledgeAreas.devsecops],
-    ["Observability & SRE", knowledgeAreas.observability],
-    ["AI / GenAI Engineering", knowledgeAreas.ai],
+    ["Broadcasting & Streaming", knowledgeAreas.broadcasting],
+    ["AI & Agentic Systems", knowledgeAreas.ai],
+    ["SaaS & Product Building", knowledgeAreas.saas],
+    ["Platform Engineering", knowledgeAreas.platform],
+    ["AV & Enterprise Networking", knowledgeAreas.networking],
   ];
   for (const [label, desc] of capabilities) {
     rowLine(label, desc);
@@ -156,10 +154,10 @@ async function downloadReport() {
   // ── Impact ───────────────────────────────────────────
   sectionLabel("Impact at Scale");
   const metrics = [
-    `${impact.clusters} Kubernetes Clusters`,
-    `${impact.regions} Global Regions`,
-    `${impact.pipelines}+ Pipelines`,
-    `${impact.uptime} Uptime SLA`,
+    `${impact.feeds} Live Feeds`,
+    `${impact.uptime} Uptime`,
+    `${impact.projects}+ Projects Live`,
+    `${impact.recognition} India Builder`,
   ];
   tagLine(metrics);
 
@@ -170,13 +168,13 @@ async function downloadReport() {
   doc.setFontSize(7.5);
   doc.setTextColor(160);
   doc.text(
-    `vikashjaiswal.486@gmail.com  ·  github.com/vikas0486  ·  ${identity.location}`,
+    `hsharma.gxi@gmail.com  ·  github.com/hsharmagxi-debug  ·  ${identity.location}`,
     105,
     y,
     { align: "center" }
   );
 
-  doc.save("Vikash-Jaiswal-Capability-Report.pdf");
+  doc.save("Himanshu-Sharma-Capability-Report.pdf");
 }
 
 export default function SkillSnapshot() {
@@ -277,10 +275,10 @@ export default function SkillSnapshot() {
               {/* Impact metrics */}
               <div className="grid grid-cols-4 gap-4 mb-8">
                 {[
-                  { label: "Clusters", value: profile.impact.clusters },
-                  { label: "Regions", value: profile.impact.regions },
-                  { label: "Pipelines", value: `${profile.impact.pipelines}+` },
+                  { label: "Live Feeds", value: profile.impact.feeds },
                   { label: "Uptime", value: profile.impact.uptime },
+                  { label: "Projects", value: `${profile.impact.projects}+` },
+                  { label: "Recognition", value: profile.impact.recognition },
                 ].map(({ label, value }) => (
                   <div
                     key={label}

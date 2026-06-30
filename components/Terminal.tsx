@@ -12,31 +12,30 @@ interface Line {
 }
 
 const SCRIPT: Line[] = [
-  { type: "cmd",     text: "$ whoami",                                     delay: 400 },
-  { type: "output",  text: "Vikash Jaiswal",                                delay: 300 },
-  { type: "muted",   text: "Lead DevOps Engineer · Devo Technology",        delay: 200 },
-  { type: "blank",   text: "",                                               delay: 300 },
-  { type: "cmd",     text: "$ cat profile.json",                            delay: 500 },
-  { type: "output",  text: "{",                                              delay: 100 },
-  { type: "output",  text: '  "experience"  : "15+ years",',               delay: 80  },
-  { type: "output",  text: '  "cloud"       : "AWS · GCP · Azure · IBM",', delay: 80  },
-  { type: "output",  text: '  "iac"         : "Terraform · Terragrunt · Ansible",', delay: 80 },
-  { type: "output",  text: '  "containers"  : "Kubernetes (19 clusters) · Docker · Helm",', delay: 80 },
-  { type: "output",  text: '  "cicd"        : "Jenkins · ArgoCD · GitHub Actions · GitLab",', delay: 80 },
-  { type: "output",  text: '  "observability": "Prometheus · Grafana · OpenTelemetry · Dynatrace",', delay: 80 },
-  { type: "output",  text: '  "ai"          : "Bedrock · Claude · Gemini · forge-router · MCP",', delay: 80 },
-  { type: "output",  text: '  "regions"     : ["EU","US","US3","APAC","SANT","GCP","NCSC"]', delay: 80 },
-  { type: "output",  text: "}",                                              delay: 200 },
-  { type: "blank",   text: "",                                               delay: 300 },
-  { type: "cmd",     text: "$ forge status",                                delay: 500 },
-  { type: "success", text: "✓  Antigravity  healthy   priority 0",          delay: 120 },
-  { type: "success", text: "✓  Groq         healthy   priority 2",          delay: 120 },
-  { type: "success", text: "✓  Claude       healthy   priority 3",          delay: 120 },
-  { type: "success", text: "✓  OpenAI       healthy   priority 6",          delay: 120 },
-  { type: "success", text: "✓  Ollama       healthy   priority 7",          delay: 120 },
-  { type: "blank",   text: "",                                               delay: 300 },
-  { type: "cmd",     text: "$ echo $AVAILABILITY",                          delay: 500 },
-  { type: "success", text: "OPEN_TO_LEADERSHIP_ROLES=true",                 delay: 300 },
+  { type: "cmd",     text: "$ whoami",                                          delay: 400 },
+  { type: "output",  text: "Himanshu Sharma",                                   delay: 300 },
+  { type: "muted",   text: "Technical Specialist · GlobalXperts (NHL Project)", delay: 200 },
+  { type: "blank",   text: "",                                                   delay: 300 },
+  { type: "cmd",     text: "$ cat profile.json",                                delay: 500 },
+  { type: "output",  text: "{",                                                  delay: 100 },
+  { type: "output",  text: '  "broadcast"   : "AWS MediaLive · MediaPackage · SRT/RTMP · VTOC",', delay: 80 },
+  { type: "output",  text: '  "cloud"       : "AWS · Docker · Vercel · Supabase · GitHub Actions",', delay: 80 },
+  { type: "output",  text: '  "ai"          : "Claude · Ollama · RAG · Multi-Agent · n8n",',        delay: 80 },
+  { type: "output",  text: '  "fullstack"   : "Next.js 15 · TypeScript · Tailwind · shadcn/ui",',  delay: 80 },
+  { type: "output",  text: '  "networking"  : "Q-SYS · Crestron · AMX · HDBaseT · VLANs",',       delay: 80 },
+  { type: "output",  text: '  "uptime"      : "99.97% · 16 simultaneous feeds · NHL",',            delay: 80 },
+  { type: "output",  text: '  "projects"    : ["The KPI Hub","AetherAI","PolyMind","Lumina"]',     delay: 80 },
+  { type: "output",  text: "}",                                                  delay: 200 },
+  { type: "blank",   text: "",                                                   delay: 300 },
+  { type: "cmd",     text: "$ aether status",                                   delay: 500 },
+  { type: "success", text: "✓  Claude        healthy   priority 1",             delay: 120 },
+  { type: "success", text: "✓  Ollama        healthy   priority 2",             delay: 120 },
+  { type: "success", text: "✓  ChromaDB      healthy   priority 3",             delay: 120 },
+  { type: "success", text: "✓  n8n           healthy   priority 4",             delay: 120 },
+  { type: "success", text: "✓  OpenWebUI     healthy   priority 5",             delay: 120 },
+  { type: "blank",   text: "",                                                   delay: 300 },
+  { type: "cmd",     text: "$ echo $AVAILABILITY",                              delay: 500 },
+  { type: "success", text: "OPEN_TO_WORK=true",                                 delay: 300 },
 ];
 
 const COLOR: Record<LineType, string> = {
@@ -73,7 +72,7 @@ export default function Terminal() {
             <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
             <span className="w-3 h-3 rounded-full bg-green-500/80" />
             <span className="ml-4 text-xs text-zinc-600 font-mono">
-              vikash@forge ~ zsh
+              himanshu@forge ~ zsh
             </span>
           </div>
 

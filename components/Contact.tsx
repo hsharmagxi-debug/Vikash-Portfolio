@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail, MapPin, Clock } from "lucide-react";
 
 export default function Contact() {
@@ -20,11 +20,11 @@ export default function Contact() {
             Let&apos;s Talk
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Open to the Right Role
+            Open to the Right Opportunity
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto leading-relaxed">
-            I&apos;m looking for a leadership platform where I can define and drive a DevOps roadmap —
-            not execute someone else&apos;s. If you&apos;re building something ambitious, let&apos;s connect.
+            Open to technical roles in live broadcast infrastructure, cloud-native platforms, or AI systems —
+            and builder conversations around product and founding. If you&apos;re building something ambitious, let&apos;s connect.
           </p>
         </motion.div>
 
@@ -40,19 +40,19 @@ export default function Contact() {
             {
               icon: MapPin,
               label: "Location",
-              value: "Noida / Gurgaon, India",
+              value: "Delhi-NCR, India",
               sub: "Remote / PAN India preferred",
             },
             {
               icon: Clock,
               label: "Availability",
-              value: "Immediately",
-              sub: "Previous employed at Devo",
+              value: "Open to Work",
+              sub: "Currently: GlobalXperts (NHL)",
             },
             {
               icon: Mail,
               label: "Email",
-              value: "vikashjaiswal.486",
+              value: "hsharma.gxi",
               sub: "@gmail.com",
             },
           ].map(({ icon: Icon, label, value, sub }) => (
@@ -79,11 +79,11 @@ export default function Contact() {
           className="flex justify-center mb-12"
         >
           <a
-            href="mailto:vikashjaiswal.486@gmail.com"
+            href="mailto:hsharma.gxi@gmail.com"
             className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium text-sm transition-colors duration-150"
           >
             <Mail size={14} />
-            vikashjaiswal.486@gmail.com
+            hsharma.gxi@gmail.com
           </a>
         </motion.div>
 
@@ -96,9 +96,8 @@ export default function Contact() {
           className="flex items-center justify-center gap-8 text-zinc-600"
         >
           {[
-            { href: "https://github.com/vikas0486", Icon: FaGithub, label: "GitHub" },
-            { href: "https://www.linkedin.com/in/linked2vikashjaiswal/", Icon: FaLinkedin, label: "LinkedIn" },
-            { href: "https://medium.com/@vikash.jaiswal", Icon: FaMedium, label: "Medium" },
+            { href: "https://github.com/hsharmagxi-debug", Icon: FaGithub, label: "GitHub" },
+            { href: "https://www.linkedin.com/in/himanshusharma08368895811/", Icon: FaLinkedin, label: "LinkedIn" },
           ].map(({ href, Icon, label }) => (
             <a
               key={label}

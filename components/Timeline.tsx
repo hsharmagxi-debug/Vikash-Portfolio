@@ -4,89 +4,48 @@ import { motion } from "framer-motion";
 
 const EXPERIENCE = [
   {
-    period: "Apr 2023 – Present",
-    role: "Lead DevOps Engineer / SRE",
-    company: "Devo Technology",
-    location: "Noida, India",
+    period: "2025 – Present",
+    role: "Technical Specialist – Broadcasting & Streaming",
+    company: "GlobalXperts (NHL Project)",
+    location: "Delhi-NCR, India",
     type: "Full-time",
     bullets: [
-      "Architected and delivered AI FORGE — enterprise GenAI operational platform on AWS Bedrock, reducing engineer troubleshooting ramp-up by ~60%",
-      "Managed 19+ Kubernetes clusters across 7 global regions (EU, US, US3, APAC, SANT, GCP, NCSC) using ArgoCD GitOps + Helm",
-      "Built unified observability platform: OpenTelemetry collectors + Prometheus + Grafana with GitOps-managed alert lifecycle (YAML-as-code)",
-      "Eliminated on-call manual toil for EBS storage events via event-driven Lambda automation — 45-min pages → 3-min zero-touch resolution",
-      "Integrated OpenBao/Vault across all Kubernetes, Jenkins, GitLab, and infrastructure pipelines — zero hardcoded credentials",
-      "Led Terraform/Terragrunt IaC standardization across APAC, EU, and US production regions — single change, three regions, consistent result",
-      "Developed Custom Terraform Provider using Plugin SDK — built internal infrastructure abstractions not available in off-the-shelf providers",
-      "Resolved JVM OutOfMemoryError incidents on mission-critical CaixaBank cluster via heap-dump investigation and object isolation fixes",
+      "Delivered reliable live production support for NHL broadcasts across 16 simultaneous feeds with 99.97% uptime, including Stanley Cup Finals Game 7 with zero feed drops or escalations.",
+      "Handle real-time monitoring, incident management in ServiceNow, and rapid troubleshooting for live streaming infrastructure.",
+      "Work with AWS MediaLive, MediaPackage, SRT/RTMP low-latency protocols, and VTOC systems.",
+      "Maintain 100% compliance on pre/post-game checklists and detailed activity logging.",
+      "Support NHL Innovation Lab testing and integrations.",
     ],
-    tags: ["AWS", "Kubernetes", "Terraform", "ArgoCD", "Bedrock", "OpenTelemetry"],
+    tags: ["AWS MediaLive", "MediaPackage", "SRT/RTMP", "VTOC", "ServiceNow", "Live Monitoring"],
   },
   {
-    period: "Feb 2022 – Apr 2023",
-    role: "Senior Cloud Consultant",
-    company: "GlobalXperts Inc",
-    location: "Noida, India",
-    type: "Full-time",
+    period: "2025 – Present",
+    role: "Founder & CEO",
+    company: "The KPI Hub",
+    location: "Delhi-NCR, India",
+    type: "Founder",
     bullets: [
-      "Owned production operations for NHL live streaming on AWS MediaLive, MediaConnect, CloudFront, and Route53 — strict SLA environment",
-      "Architected VPC subnets, load balancers, DNS configurations, and CloudFront CDN footprints for high-volume media streams",
-      "Built multi-platform metrics aggregation combining Datadog, CloudWatch, and Grafana for streaming health monitoring",
-      "Led incident response, root cause analysis, and service recovery for customer-facing media services",
-      "Delivered Terraform-based cloud modernization advisory for enterprise clients across multiple verticals",
+      "Building a high-trust B2B SaaS intelligence platform delivering real-time category intelligence (funding, launches, pricing, hiring) via AI-synthesized daily briefs.",
+      "Tech Stack: Next.js 15, TypeScript, Tailwind, Supabase (with RLS), Claude 3.5 Sonnet.",
+      "Leading product development, automation pipelines, content intelligence systems, and go-to-market strategy.",
+      "Selected as India's Top 300 Builders at VibeCon 2025 (YC × Anthropic × Lightspeed × Razorpay).",
     ],
-    tags: ["AWS", "MediaLive", "MediaConnect", "Terraform", "Datadog", "Grafana"],
+    tags: ["Next.js 15", "TypeScript", "Supabase", "Claude", "SaaS", "AI Pipelines"],
   },
   {
-    period: "Aug 2019 – Feb 2022",
-    role: "Assistant Manager – Cloud & RF Engineer",
-    company: "Hughes Communications India Ltd",
-    location: "Noida, India",
+    period: "~2019 – 2025",
+    role: "AV Systems & Enterprise Network Specialist",
+    company: "Various Clients",
+    location: "Delhi-NCR, India",
     type: "Full-time",
     bullets: [
-      "Engineered cloud-integrated streaming media architectures for nationwide corporate and government e-learning platforms",
-      "Deployed hybrid AWS Media Services + VSAT satellite pipelines across constrained edge-network environments",
-      "Conducted satellite Link Budget calculations, EIRP tracking, and transponder bandwidth mapping across remote sites",
-      "Led enterprise customer migrations from on-premise to AWS — infrastructure modernization and automation buildout",
+      "5+ years of AV systems design, installation, and commissioning for enterprise clients — conference rooms, broadcast control rooms, and large-venue deployments.",
+      "Worked with Q-SYS, Crestron, and AMX DSP/control systems for audio routing, signal distribution, and room automation.",
+      "Designed and implemented enterprise network infrastructure: VLANs (802.1Q trunking), L2/L3 switching, RSTP/MSTP, BPDU Guard, DHCP Snooping, and switch port security.",
+      "Delivered SOW documentation, commissioning reports, and red-line drawings for enterprise AV/IT deployments.",
+      "Managed HDBaseT and structured cabling infrastructure across multi-floor corporate environments.",
     ],
-    tags: ["AWS", "Media Services", "VSAT", "RF Engineering", "Cloud Migration"],
-  },
-  {
-    period: "Apr 2012 – Jul 2019",
-    role: "Assistant Manager – Broadcast Operations",
-    company: "Tata Sky Ltd (Tata Sky Binge)",
-    location: "Delhi NCR, India",
-    type: "Full-time",
-    bullets: [
-      "Governed real-time transmission and live ingestion pipelines for 450+ TV channels and Tata Sky Binge OTT platform serving millions of subscribers",
-      "Orchestrated serverless media workflows using AWS Lambda + Step Functions for stream transcoding, HLS/DASH packaging, and manifest generation",
-      "Programmed Python health-check modules polling telemetry from bare-metal hardware, transcoders, and central storage arrays",
-      "Led broadcast operations: compression systems, RF infrastructure, uplink services, multiplexing, content delivery, and SLA management",
-      "Partnered with OTT, CDN, product, and infrastructure teams supporting content onboarding, metadata workflows, and subscriber-facing digital experiences",
-    ],
-    tags: ["AWS Lambda", "Step Functions", "Python", "HLS/DASH", "CDN", "OTT"],
-  },
-  {
-    period: "Apr 2010 – Apr 2012",
-    role: "Broadcast Engineer",
-    company: "Essel Shyam Communication Ltd",
-    location: "Delhi NCR, India",
-    type: "Full-time",
-    bullets: [
-      "Managed broadcast automation platforms and master control room distribution for Star India, Disney, Hotstar, and Discovery TV",
-      "Supported Harris automation suites, automated playback loops, and baseband hardware routing for strict 24x7 SLA uptime",
-    ],
-    tags: ["Broadcast Automation", "Harris Systems", "Playout", "SLA Management"],
-  },
-  {
-    period: "Aug 2009 – Mar 2010",
-    role: "Service Engineer",
-    company: "TVS-E Service Tec (Nokia)",
-    location: "Delhi NCR, India",
-    type: "Full-time",
-    bullets: [
-      "Executed chip-level diagnostics and Layer-4 hardware evaluations on mobile development platform prototypes",
-    ],
-    tags: ["Hardware", "Diagnostics", "Nokia"],
+    tags: ["Q-SYS", "Crestron", "AMX", "HDBaseT", "VLANs", "L2/L3 Switching", "RSTP/MSTP"],
   },
 ];
 
@@ -110,7 +69,7 @@ export default function Timeline() {
             Experience
           </h2>
           <p className="mt-4 text-zinc-400">
-            15+ years spanning Broadcast Operations → OTT/Media Engineering → Cloud/SRE → Platform Engineering → GenAI
+            Broadcasting → Enterprise AV/Networking → Live Cloud Infrastructure → SaaS Founder & AI Builder
           </p>
         </motion.div>
 
@@ -174,47 +133,23 @@ export default function Timeline() {
           </div>
         </div>
 
-        {/* Education + Certs */}
+        {/* Certifications */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mt-20 grid md:grid-cols-2 gap-6"
+          className="mt-20"
         >
-          {/* Education */}
           <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6">
             <h4 className="text-sm font-semibold text-cyan-400 uppercase tracking-widest mb-4">
-              Education
-            </h4>
-            <div className="space-y-4">
-              <div>
-                <div className="text-white font-semibold">MBA – IT & Project Management</div>
-                <div className="text-zinc-500 text-sm mt-0.5">
-                  Sikkim Manipal University · 2012
-                </div>
-              </div>
-              <div>
-                <div className="text-white font-semibold">B.Tech – Electronics & Communication Engineering</div>
-                <div className="text-zinc-500 text-sm mt-0.5">
-                  UPTU Lucknow · 2009
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Certifications */}
-          <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6">
-            <h4 className="text-sm font-semibold text-cyan-400 uppercase tracking-widest mb-4">
-              Certifications
+              Certifications & Recognition
             </h4>
             <div className="space-y-3">
               {[
-                { name: "AWS Certified Solutions Architect – Associate", year: "2023–2026" },
-                { name: "AWS Certified Cloud Practitioner", year: "" },
-                { name: "ITIL Foundation Certification", year: "" },
-                { name: "ServiceNow Fundamentals", year: "" },
-                { name: "Claude 101 – Anthropic AI Certification", year: "" },
+                { name: "AWS Certified MediaLive & MediaPackage Specialist", year: "Feb 2026" },
+                { name: "Advanced ServiceNow Incident Management & Automation", year: "" },
+                { name: "India's Top 300 Builders — VibeCon 2025 (YC × Anthropic × Lightspeed × Razorpay)", year: "2025" },
               ].map((cert) => (
                 <div key={cert.name} className="flex items-start gap-2">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0" />

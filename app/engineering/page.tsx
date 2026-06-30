@@ -93,11 +93,11 @@ export default function Engineering() {
             animate={{ opacity: 1, y: 0 }}
           >
             <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
-              🧠 Ask Vikash Architecture
+              🧠 Ask Himanshu Engineering
             </h2>
 
             <p className="text-zinc-500 mb-6">
-              Ask real DevOps / Cloud / System Design questions. Built on my engineering experience.
+              Ask real questions about live broadcasting, AI systems, SaaS, and platform engineering. Built on my experience.
             </p>
 
             {/* Lazy loaded = prevents build + hydration load spike */}

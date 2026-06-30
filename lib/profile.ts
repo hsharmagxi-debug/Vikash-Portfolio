@@ -1,91 +1,89 @@
 export const profile = {
   identity: {
-    name: "Vikash Jaiswal",
-    title: "Lead Platform Engineer",
-    location: "Noida / Gurgaon, India",
-    availability: "Available · immediately",
+    name: "Himanshu Sharma",
+    title: "Technical Specialist – Broadcasting & Streaming",
+    location: "Delhi-NCR, India",
+    availability: "Open to Work",
   },
 
   roles: [
-    "Lead Platform Engineer",
-    "Principal DevOps Engineer",
-    "AWS Cloud Architect",
-    "Site Reliability Engineer",
-    "AI Systems Builder",
+    "Technical Specialist – Broadcasting & Streaming",
+    "Founder & CEO, The KPI Hub",
+    "Builder of Autonomous AI Systems",
+    "Platform Engineer | NHL Broadcast Support",
   ],
 
   summary:
-    "I design and operate enterprise-scale cloud and AI platforms using Kubernetes, Terraform, and GenAI systems across multi-region AWS environments. Focused on reliability, automation, and AI-driven platform engineering.",
+    "Results-driven Technical Specialist and Founder with deep expertise in live broadcast infrastructure, cloud-native platforms, and autonomous AI systems. Currently supporting high-stakes NHL broadcasts with 99.97% uptime while building production-grade SaaS and self-hosted AI platforms. Passionate about building systems that matter — reliable, scalable, and privacy-first.",
 
   // =========================
   // CORE SKILLS (UI + AI)
   // =========================
   skills: [
-    "Kubernetes",
-    "Terraform",
-    "AWS",
-    "CI/CD",
-    "DevSecOps",
-    "Observability",
-    "System Design",
-    "Platform Engineering",
-    "SRE",
-    "GenAI Systems",
-    "RAG Architectures",
+    "AWS MediaLive",
+    "Live Broadcasting",
+    "Docker",
+    "Next.js 15",
+    "TypeScript",
+    "Claude / Ollama",
+    "RAG Systems",
+    "Multi-Agent Architecture",
+    "Reliability Engineering",
+    "Supabase",
+    "ServiceNow",
   ],
 
   // =========================
   // STRUCTURED EXPERTISE (RAG CORE)
   // =========================
   expertise: {
-    cloud: ["AWS"],
-    infra: ["Kubernetes", "Terraform", "Helm", "ArgoCD"],
-    cicd: ["GitHub Actions", "Jenkins"],
-    observability: ["Prometheus", "Grafana", "Dynatrace", "OpenTelemetry"],
-    security: ["IAM", "Secrets Management", "DevSecOps Practices"],
-    ai: ["AWS Bedrock", "LLMs", "AI Agents", "RAG Systems"],
+    broadcasting: ["AWS MediaLive", "MediaPackage", "SRT / RTMP", "VTOC", "Live Monitoring", "ServiceNow"],
+    cloud: ["AWS", "Docker", "Vercel", "Supabase", "GitHub Actions", "CI/CD"],
+    ai: ["Claude", "Ollama", "LangGraph Agents", "n8n Workflows", "RAG Systems", "Multi-Agent"],
+    fullstack: ["Next.js 15", "TypeScript", "Tailwind CSS", "shadcn/ui", "React"],
+    platform: ["Reliability Engineering", "Observability", "Automation", "Documentation-first"],
   },
 
   // =========================
   // IMPACT METRICS
   // =========================
   impact: {
-    clusters: 19,
-    regions: 7,
-    pipelines: 100,
-    uptime: "99.99%",
+    feeds: 16,
+    uptime: "99.97%",
+    projects: 4,
+    recognition: "Top 300",
   },
 
   // =========================
   // TAGS (FOR FILTERING + RAG SEARCH)
   // =========================
   tags: [
-    "devops",
-    "platform-engineering",
-    "cloud-architecture",
+    "live-broadcasting",
+    "nhl-broadcast",
     "ai-systems",
-    "kubernetes",
-    "terraform",
-    "observability",
+    "saas-founder",
+    "platform-engineering",
+    "autonomous-ai",
+    "full-stack",
   ],
 
   // =========================
   // KNOWLEDGE BASE (RAG READY CHUNKS)
   // =========================
   knowledgeAreas: {
-    cicd:
-      "Design scalable CI/CD pipelines using GitHub Actions and Jenkins with automated testing, security gates, artifact management, and rollback strategies.",
-
-    terraform:
-      "Implement Infrastructure as Code using Terraform modules, remote state management, state locking, and multi-environment deployment strategies.",
-
-    devsecops:
-      "Embed security into pipelines using SAST, DAST, dependency scanning, secrets management, IAM policies, and compliance automation.",
-
-    observability:
-      "Build observability systems using Prometheus, Grafana, OpenTelemetry, logs, metrics, and distributed tracing for cloud-native systems.",
+    broadcasting:
+      "Supporting live NHL broadcasts with 16 simultaneous feeds, achieving 99.97% uptime using AWS MediaLive, MediaPackage, SRT/RTMP low-latency protocols, and ServiceNow for real-time incident management. Zero feed drops during Stanley Cup Finals Game 7.",
 
     ai:
-      "Design AI-powered engineering systems using LLMs, embeddings, RAG pipelines, and knowledge-driven assistants for DevOps automation.",
+      "Building autonomous AI systems using Claude, Ollama, LangGraph-style agents, n8n workflows, RAG pipelines, and multi-agent architectures for privacy-first enterprise use cases. Projects include AetherAI (air-gapped OS) and PolyMind (multi-LLM platform).",
+
+    saas:
+      "Building production-grade B2B SaaS platforms with Next.js 15, TypeScript, Tailwind, Supabase (with RLS), and Claude. Led product, engineering, and go-to-market for The KPI Hub — an AI-synthesized market intelligence platform for founders.",
+
+    platform:
+      "Reliability-first platform engineering with 99.97%+ uptime focus. Practices include observability, automation pipelines, documentation-first approach, incremental hardening, and CI/CD via GitHub Actions and Vercel.",
+
+    networking:
+      "AV systems and enterprise networking with 5+ years of experience: Q-SYS, Crestron, AMX, HDBaseT, VLANs (802.1Q trunking), L2/L3 switching, RSTP/MSTP, BPDU Guard, DHCP Snooping, SOW/commissioning, and red-line drawings.",
   },
 };

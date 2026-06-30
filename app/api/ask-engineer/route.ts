@@ -12,68 +12,68 @@ const TOPICS: {
   principles: string[];
 }[] = [
   {
-    key: "cicd",
-    label: "CI/CD & Pipeline Architecture",
-    keywords: ["ci", "cd", "cicd", "pipeline", "jenkins", "github actions", "deploy", "rollback", "artifact", "build", "release", "workflow"],
-    tools: ["GitHub Actions", "Jenkins", "ArgoCD", "ECR", "S3", "Docker"],
+    key: "broadcasting",
+    label: "Live Broadcasting & Streaming",
+    keywords: ["broadcast", "nhl", "streaming", "medialive", "mediapackage", "srt", "rtmp", "vtoc", "live", "feed", "uptime", "servicenow", "incident", "monitoring"],
+    tools: ["AWS MediaLive", "MediaPackage", "SRT / RTMP", "VTOC", "ServiceNow", "CloudWatch"],
     principles: [
-      "Branch protection with PR-based merge gates",
-      "Multi-stage pipelines: lint → test → SAST → build → deploy",
-      "Artifact versioning in ECR / S3 with immutable tags",
-      "GitOps deployment via ArgoCD with automatic sync",
-      "Rollback strategy using Helm revision history",
-    ],
-  },
-  {
-    key: "terraform",
-    label: "Terraform & Infrastructure as Code",
-    keywords: ["terraform", "iac", "infrastructure", "state", "module", "remote state", "locking", "workspace", "provider", "resource", "tfstate"],
-    tools: ["Terraform", "S3 (remote state)", "DynamoDB (locking)", "Terragrunt", "AWS Provider"],
-    principles: [
-      "Remote state in S3 with DynamoDB locking per environment",
-      "Module-based structure: network / compute / security / observability",
-      "Separate workspaces for dev / staging / prod",
-      "Pin provider and module versions for reproducibility",
-      "Drift detection via scheduled terraform plan in CI",
-    ],
-  },
-  {
-    key: "devsecops",
-    label: "DevSecOps & Security Engineering",
-    keywords: ["security", "devsecops", "sast", "dast", "secret", "iam", "compliance", "vulnerability", "scan", "policy", "rbac", "least privilege"],
-    tools: ["Trivy", "Checkov", "AWS IAM", "Secrets Manager", "OPA / Rego", "SonarQube"],
-    principles: [
-      "Shift-left: SAST and dependency scanning in every PR",
-      "Secrets never in code — use AWS Secrets Manager + external-secrets operator",
-      "IAM least-privilege: roles scoped per service, no wildcard policies",
-      "Container image scanning before ECR push",
-      "OPA / Rego policies for Kubernetes admission control",
-    ],
-  },
-  {
-    key: "observability",
-    label: "Observability & SRE",
-    keywords: ["observability", "prometheus", "grafana", "monitoring", "alert", "log", "metric", "trace", "sre", "slo", "sla", "opentelemetry", "dynatrace", "uptime", "incident"],
-    tools: ["Prometheus", "Grafana", "OpenTelemetry", "Dynatrace", "Loki", "Tempo"],
-    principles: [
-      "Three pillars: metrics (Prometheus), logs (Loki), traces (Tempo / OTEL)",
-      "SLO-based alerting — alert on burn rate, not raw thresholds",
-      "Dashboards as code: Grafana provisioning via ConfigMaps",
-      "Distributed tracing with OpenTelemetry SDK across all services",
-      "Runbooks linked directly from alert annotations",
+      "Pre/post-game checklists for 100% compliance on every broadcast",
+      "Real-time monitoring across 16 simultaneous feeds",
+      "ServiceNow incident management with rapid triage protocols",
+      "Zero-escalation goal: resolve issues before they impact viewers",
+      "Low-latency SRT/RTMP protocols for mission-critical live events",
     ],
   },
   {
     key: "ai",
-    label: "AI / GenAI Platform Engineering",
-    keywords: ["ai", "llm", "rag", "genai", "bedrock", "agent", "embedding", "vector", "prompt", "langchain", "model", "inference", "ml", "mlops"],
-    tools: ["AWS Bedrock", "LangChain", "OpenAI", "Pinecone / pgvector", "Ray Serve"],
+    label: "AI & Agentic Systems",
+    keywords: ["ai", "llm", "rag", "agent", "claude", "ollama", "embedding", "vector", "multi-agent", "n8n", "langraph", "autonomous", "aether", "polymind", "self-hosted"],
+    tools: ["Claude", "Ollama", "ChromaDB", "n8n", "Open WebUI", "FastAPI"],
     principles: [
+      "Privacy-first: self-hosted AI for air-gapped enterprise environments",
       "RAG pipeline: chunk → embed → store in vector DB → retrieve → generate",
-      "LLM routing: fast model for triage, capable model for deep reasoning",
-      "Observability on LLM calls: latency, token usage, failure rate",
-      "Prompt versioning and A/B testing in production",
-      "AI agents with tool-use for DevOps automation (infra queries, alerts)",
+      "Multi-agent orchestration for parallel task execution",
+      "LangGraph-style agents with tool-use for workflow automation",
+      "Zero vendor lock-in: open-source stack with local inference via Ollama",
+    ],
+  },
+  {
+    key: "saas",
+    label: "SaaS Building & Product Engineering",
+    keywords: ["saas", "product", "kpi", "hub", "supabase", "next", "nextjs", "startup", "founder", "b2b", "mrr", "monetization", "pipeline", "intelligence"],
+    tools: ["Next.js 15", "TypeScript", "Supabase", "Claude", "Vercel", "Tailwind CSS"],
+    principles: [
+      "Ship fast, harden incrementally — production-grade from day one",
+      "Supabase RLS for row-level security on multi-tenant data",
+      "AI-synthesized content pipelines for automated intelligence briefs",
+      "Documentation-first approach for onboarding and scale",
+      "Multiple monetization streams validated before scaling spend",
+    ],
+  },
+  {
+    key: "platform",
+    label: "Platform Engineering & Reliability",
+    keywords: ["platform", "reliability", "observability", "automation", "ci", "cd", "deploy", "uptime", "sla", "docker", "vercel", "github actions", "devops"],
+    tools: ["Docker", "GitHub Actions", "Vercel", "AWS", "Supabase", "CI/CD Pipelines"],
+    principles: [
+      "99.97%+ uptime focus — reliability is a feature, not an afterthought",
+      "Automation over manual toil: everything that can run on a schedule, should",
+      "Observability built-in: logs, metrics, and alerts from day one",
+      "Incremental hardening: ship first, secure and optimize in layers",
+      "Documentation-first: runbooks, SOPs, and checklists before incidents happen",
+    ],
+  },
+  {
+    key: "networking",
+    label: "AV Systems & Enterprise Networking",
+    keywords: ["av", "audio", "video", "crestron", "qsys", "amx", "hdbaset", "vlan", "switching", "network", "enterprise", "commissioning", "rstp", "mstp"],
+    tools: ["Q-SYS", "Crestron", "AMX", "HDBaseT", "L2/L3 Switches", "VLAN 802.1Q"],
+    principles: [
+      "SOW-driven delivery: scope, commission, and red-line drawings for every project",
+      "VLAN segmentation (802.1Q trunking) for AV/IT traffic isolation",
+      "RSTP/MSTP with BPDU Guard and DHCP Snooping for network stability",
+      "Q-SYS/Crestron programming for room automation and DSP routing",
+      "HDBaseT for long-distance uncompressed AV over structured cabling",
     ],
   },
 ];
@@ -107,13 +107,13 @@ export async function POST(req: Request) {
       answer: `Hi, I'm ${profile.identity.name} — ${profile.identity.title}.
 
 I can answer questions on:
-  · CI/CD & pipelines
-  · Terraform & infrastructure design
-  · DevSecOps & security engineering
-  · Observability, SRE & monitoring
-  · AI / GenAI platform engineering
+  · Live broadcasting & streaming infrastructure
+  · AI & agentic systems (Claude, Ollama, RAG, multi-agent)
+  · SaaS building & product engineering
+  · Platform engineering & reliability
+  · AV systems & enterprise networking
 
-Try asking something like "How do you design a CI/CD pipeline?" or "Explain Terraform state management."`,
+Try asking something like "How do you manage live NHL broadcasts?" or "How did you build AetherAI?"`,
     });
   }
 
@@ -130,12 +130,12 @@ ${topic.tools.map((t) => `  · ${t}`).join("\n")}
 KEY PRINCIPLES
 ${topic.principles.map((p) => `  ✔ ${p}`).join("\n")}
 
-IMPACT AT SCALE
-  · ${profile.impact.clusters} Kubernetes clusters across ${profile.impact.regions} regions
-  · ${profile.impact.pipelines}+ pipelines managed · ${profile.impact.uptime} uptime SLA
+IMPACT
+  · ${profile.impact.feeds} simultaneous live feeds · ${profile.impact.uptime} uptime
+  · ${profile.impact.projects}+ production projects · ${profile.impact.recognition} India Builder (VibeCon 2025)
 
 ─────────────────────────────────────────────────
-Have a deeper question? → vikashjaiswal.486@gmail.com`;
+Have a deeper question? → hsharma.gxi@gmail.com`;
 
   return NextResponse.json({ answer });
 }
